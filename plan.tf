@@ -8,7 +8,7 @@ data "ibm_resource_group" "group" {
 }
 
 resource "ibm_is_ssh_key" "sshkey" {
-  name       = "keysshdemovpn"
+  name       = "keysshdemobackup"
   public_key = "${var.ssh_public}"
 }
 
