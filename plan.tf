@@ -51,7 +51,7 @@ resource "ibm_is_instance" "vsiwindows" {
 resource "ibm_is_instance" "vsilinux" {
   name    = "vsiworkstation"
   image   = "63efa246-2113-48f4-a7eb-844d865021c7"
-  profile = "cx2-2x4"
+  profile = "bx2-2x8"
   resource_group = "${data.ibm_resource_group.group.id}"
 
 
