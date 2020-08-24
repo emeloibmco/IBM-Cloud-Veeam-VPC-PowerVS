@@ -33,7 +33,7 @@ resource "ibm_is_security_group" "securitygroupdemobackup" {
 
 resource "ibm_is_instance" "vsiwindows" {
   name    = "vsibackupadmin"
-  image   = "a63864aa-c766-42d3-8bd0-999fdb87fb42"
+  image   = "r018-54e9238a-ffdd-4f90-9742-7424eb2b9ff1"
   profile = "bx2-8x32"
   resource_group = "${data.ibm_resource_group.group.id}"
 
