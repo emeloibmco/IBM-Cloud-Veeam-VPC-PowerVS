@@ -21,7 +21,7 @@ resource "ibm_is_subnet" "subnetforbackup" {
   name            = "subnetforbackup"
   vpc             = "${ibm_is_vpc.vpcbackup.id}"
   zone            = "eu-gb-1"
-  total_ipv4_address_count  = "10"
+  total_ipv4_address_count  = "16"
 }
 
 resource "ibm_is_security_group" "securitygroupdemobackup" {
