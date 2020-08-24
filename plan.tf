@@ -31,6 +31,13 @@ resource "ibm_is_security_group" "securitygroupdemobackup" {
 }
 
 
+resource "ibm_is_volume" "volume" {
+  name     = "backuprepo"
+  profile  = "10iops-tier"
+  zone     = "us-south-1"
+}
+
+
 resource "ibm_is_instance" "vsiwindows" {
   name    = "vsibackupadmin"
   image   = "5ccbc579-dc22-0def-46a8-9c2e9b502d37"
@@ -46,6 +53,7 @@ resource "ibm_is_instance" "vsiwindows" {
   vpc       = "${ibm_is_vpc.vpcbackup.id}"
   zone      = "us-south-1"
   keys = ["${ibm_is_ssh_key.sshkey.id}"]
+  volume = ["${ibm_is_volume.volume.id}"]
 }
 
 resource "ibm_is_instance" "vsilinux" {
