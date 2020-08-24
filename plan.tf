@@ -44,7 +44,7 @@ resource "ibm_is_instance" "vsiwindows" {
   }
 
   vpc       = "${ibm_is_vpc.vpcbackup.id}"
-  zone      = "us-south-1"
+  zone      = "eu-gb-1"
   keys = ["${ibm_is_ssh_key.sshkey.id}"]
 }
 
@@ -61,7 +61,7 @@ resource "ibm_is_instance" "vsilinux" {
   }
 
   vpc       = "${ibm_is_vpc.vpcbackup.id}"
-  zone      = "us-south-1"
+  zone      = "eu-gb-1"
   keys = ["${ibm_is_ssh_key.sshkey.id}"]
 }
 
