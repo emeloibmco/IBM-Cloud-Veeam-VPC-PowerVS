@@ -20,7 +20,7 @@ resource "ibm_is_vpc" "vpcbackup" {
 resource "ibm_is_subnet" "subnetforbackup" {
   name            = "subnetforbackup"
   vpc             = "${ibm_is_vpc.vpcbackup.id}"
-  zone            = "us-south-1"
+  zone            = "eu-gb-1"
   ipv4_cidr_block = "10.240.0.0/24"
 }
 
