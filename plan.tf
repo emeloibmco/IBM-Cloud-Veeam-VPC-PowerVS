@@ -22,7 +22,6 @@ resource "ibm_is_subnet" "subnetforvpn" {
   vpc             = "${ibm_is_vpc.vpcbackup.id}"
   zone            = "us-south-1"
   ipv4_cidr_block = "10.240.0.0/24"
-  network_acl     = "${ibm_is_network_acl.acldemovpn.id}"
 }
 
 resource "ibm_is_vpn_gateway" "testacc_vpn_gateway" {
