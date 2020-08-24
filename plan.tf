@@ -1,6 +1,6 @@
 provider "ibm" {
-  generation         = 1
-  region             = "us-south"
+  generation         = 2
+  region             = "eu-gb"
 }
 
 data "ibm_resource_group" "group" {
