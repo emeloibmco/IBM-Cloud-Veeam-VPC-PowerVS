@@ -18,7 +18,7 @@ resource "ibm_is_vpc" "vpcbackup" {
 }
 
 resource "ibm_is_subnet" "subnetforbackup" {
-  name            = "subnetfor"
+  name            = "subnetforbackup"
   vpc             = "${ibm_is_vpc.vpcbackup.id}"
   zone            = "us-south-1"
   ipv4_cidr_block = "10.240.0.0/24"
@@ -33,7 +33,7 @@ resource "ibm_is_security_group" "securitygroupdemobackup" {
 
 resource "ibm_is_instance" "vsiwindows" {
   name    = "vsibackupandreplication"
-  image   = "9de244af-e231-4aae-a958-aa60d735c826"
+  image   = "5ccbc579-dc22-0def-46a8-9c2e9b502d37"
   profile = "bx2-8x32"
   resource_group = "${data.ibm_resource_group.group.id}"
 
