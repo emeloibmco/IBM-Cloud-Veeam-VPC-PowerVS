@@ -33,7 +33,7 @@ resource "ibm_is_security_group" "securitygroupdemobackup" {
 
 resource "ibm_is_instance" "vsiwindows" {
   name    = "vsibackupadmin"
-  image   = "5ccbc579-dc22-0def-46a8-9c2e9b502d37"
+  image   = "a63864aa-c766-42d3-8bd0-999fdb87fb42"
   profile = "b-8x32"
   resource_group = "${data.ibm_resource_group.group.id}"
 
@@ -50,7 +50,7 @@ resource "ibm_is_instance" "vsiwindows" {
 
 resource "ibm_is_instance" "vsilinux" {
   name    = "vsiworkstation"
-  image   = "7eb4e35b-4257-56f8-d7da-326d85452591"
+  image   = "63efa246-2113-48f4-a7eb-844d865021c7"
   profile = "b-2x8"
   resource_group = "${data.ibm_resource_group.group.id}"
 
