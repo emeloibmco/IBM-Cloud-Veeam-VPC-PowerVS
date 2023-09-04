@@ -43,10 +43,12 @@ Si desea habilitar la indexación del sistema de archivos en la configuración d
 
 ## Instalar el agente: 
 Puede instalar Veeam Agent para IBM AIX mediante el gestor de paquetes RPM. Para instalar Veeam Agent para IBM AIX:
-1. Descargue el archivo de instalación de Veeam Agent para IBM AIX desde la [página de descargas de Veeam](https://www.veeam.com/ibm-aix-agent-download.html). 
-2. 2. Extraiga el contenido del archivo de instalación a un directorio al que pueda acceder desde el equipo 
-en el que desee instalar el producto. Por ejemplo, puede ser un directorio del sistema de archivos local o un directorio NFS. 
-directorio NFS.
-3. Navegue hasta el directorio en el que extrajo el archivo con el comando cd y, a continuación, utilice el comando 
-siguiente comando:
+1. Descargue el archivo de instalación de Veeam Agent para IBM AIX desde la [página de descargas de Veeam](https://www.veeam.com/ibm-aix-agent-download.html).
+2. Extraiga el contenido del archivo de instalación a un directorio al que pueda acceder desde el equipo en el que desee instalar el producto. Por ejemplo, puede ser un directorio del sistema de archivos local o un directorio NFS.
+3. Navegue hasta el directorio en el que extrajo el archivo con el comando cd y, a continuación, utilice el comando:
+
+`rpm -ivh VeeamAgent-4.0.1.1173-ppc64.rpm`
+
+## Conectar el agente a un Veeam Backup Server
+
 
