@@ -32,3 +32,11 @@ b. Si el conjunto de archivos rpm.rte instalado está desactualizado o no está 
 5. Si tiene previsto activar la indexación del sistema de archivos en la configuración del trabajo de copia de seguridad, deberá instalar la utilidad mlocate en el equipo Veeam Agent. La utilidad se proporciona junto con Veeam Agent en los medios de instalación del producto.
 6. Si tiene previsto crear Veeam Recovery Media, debe tener el comando mkisofs funcional en el equipo Veeam Agent.
 7. Puede instalar y utilizar Veeam Agent para IBM AIX en un LPAR o WPAR
+
+## Instalar software como prerequisito:
+Si desea habilitar la indexación del sistema de archivos en la configuración de la tarea de copia de seguridad, debe instalar la utilidad mlocate en el equipo Veeam Agent. La utilidad se proporciona junto con Veeam Agent en los medios de instalación del producto. Para instalar la utilidad mlocate
+1. Obtenga el archivo de instalación de Veeam Agent para IBM AIX.
+2. Extraiga el contenido del archivo de instalación a un directorio accesible desde el equipo en el que desee instalar el producto. Por ejemplo, puede ser un directorio del sistema de archivos local o un directorio NFS. 
+3. Navegue hasta el directorio en el que extrajo el archivo con el comando cd y, a continuación, utilice el comando:
+
+`rpm -ivh mlocate-0.26-1.aix6.1.ppc.rpm`
